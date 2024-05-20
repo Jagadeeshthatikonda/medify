@@ -4,6 +4,7 @@ import NavbarMedifyQuotation from "./components/NavbarMedifyQuotation/NavbarMedi
 import Navbar from "./components/Navbar/Navbar"
 import MedifyBodyContentWrapper from "./components/MedifyBodyContentWrapper/MedifyBodyContentWrapper";
 import "./App.css";
+import FaqSection from "./components/FaqSection/FaqSection";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           }
         />
       </Routes>
+      <FaqSection />
 
     </div>
   );

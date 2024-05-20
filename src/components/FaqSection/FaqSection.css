@@ -1,0 +1,59 @@
+.faq-title {
+  color: rgba(42, 167, 255, 1);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+  margin: 35px 0px 5px 0px;
+}
+
+.faq-description {
+  color: rgba(27, 60, 116, 1);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: center;
+  margin: 5px 0px 35px 0px;
+}
+
+.left-section-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.each-question-container {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-image-container {
+  position: relative;
+  background-image: url("../../assets//doctor.png");
+  width: 500px;
+  height: 479px;
+  background-size: cover;
+}
+.question {
+  color: rgba(27, 60, 116, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 30px 0px;
+  width: 380px;
+}
+
+.likes {
+  position: absolute;
+  left: -30px;
+  bottom: 30px;
+}
+.love {
+  position: absolute;
+  right: -35px;
+  top: 110px;
+}

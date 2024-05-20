@@ -19,6 +19,8 @@ import Specialisation from "../Specialisation/Specialisation"
 import MedicalSpecialist from "../MedicalSpecialist/MedicalSpecialist"
 import PatientCaringSection from "../PatientCaringSection/PatientCaringSection"
 import BlogAndNews from "../../components/BlogAndNews/BlogAndNews"
+import FamilySection from "../../components/FamilySection/FamilySection"
+import FaqSection from "../../components/FaqSection/FaqSection"
 
 const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
   <div className="input-container select-width">
@@ -137,6 +139,7 @@ const MedifyBodyContentWrapper = ({
       <MedicalSpecialist />
       <PatientCaringSection />
       <BlogAndNews />
+      <FamilySection />
     </div>
   );
 };

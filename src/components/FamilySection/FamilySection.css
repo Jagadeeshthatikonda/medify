@@ -1,0 +1,39 @@
+.family-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(81deg, #e7f0ff 9.01%, #e8f1ff78 89.11%);
+  padding-top: 30px;
+}
+
+.family-section-content {
+  width: 585px;
+}
+
+.caring-health-heading {
+  color: #2aa7ff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.our-families-heading {
+  color: #1b3c74;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+}
+
+.our-families-info {
+  color: #77829d;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 40.8px;
+  text-align: left;
+}
+
+.our-family-section-image {
+  width: 585px;
+}
