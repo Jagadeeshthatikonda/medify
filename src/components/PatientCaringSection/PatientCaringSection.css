@@ -1,0 +1,64 @@
+.patient-caring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 70px;
+}
+
+.patient-caring-info {
+  width: 563px;
+}
+
+.helping-text {
+  color: #2aa7ff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.patient-caring-info > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+}
+
+.patient-text {
+  color: #1b3c74;
+}
+
+.caring-text {
+  color: #2aa7ff;
+}
+
+.goal-text {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #77829d;
+}
+
+.caring-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 20px 0px;
+  color: #1b3c74;
+  font-family: Roboto;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.feature-item-text {
+  margin-left: 8px;
+}

@@ -10,7 +10,6 @@ import Ambulance from "../../assets/Ambulance.png";
 import Capsule from "../../assets/Capsule.png";
 import Hospital from "../../assets/Hospital.png";
 import Drugstore from "../../assets/Drugstore.png";
-import Navbar from "../Navbar/Navbar";
 import { Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -18,10 +17,11 @@ import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
 import Specialisation from "../Specialisation/Specialisation"
 import MedicalSpecialist from "../MedicalSpecialist/MedicalSpecialist"
+import PatientCaringSection from "../PatientCaringSection/PatientCaringSection"
 
 const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
   <div className="input-container select-width">
-    <img src={SearchIcon} alt="" />
+    <img src={SearchIcon} alt="search icon" />
     <select value={selectedValue} onChange={onChange}>
       <option value="">{placeholder}</option>
       {options.map((option) => (
@@ -134,6 +134,7 @@ const MedifyBodyContentWrapper = ({
       {renderOffers(3, 1250)}
       <Specialisation />
       <MedicalSpecialist />
+      <PatientCaringSection />
     </div>
   );
 };
