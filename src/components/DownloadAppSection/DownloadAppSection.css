@@ -51,7 +51,7 @@
   border-right: 1px solid #b4b4be; /* rgba(180, 180, 190, 0.3) */
 }
 
-.enter-phone-number {
+.phone-number-input {
   height: 49px;
   padding: 0px 20px;
   width: 100%;
