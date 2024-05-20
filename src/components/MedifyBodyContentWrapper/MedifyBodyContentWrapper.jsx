@@ -1,5 +1,5 @@
 import React from "react";
-import "./MedifyNavWithBodyWrapper.css";
+import "./MedifyBodyContentWrapper.css";
 import Hero from "../../assets/Hero.png";
 import ThirtyOff from "../../assets/ThirtyOff.png";
 import HundredOff from "../../assets/HundredOff.png";
@@ -16,6 +16,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
+import Specialisation from "../Specialisation/Specialisation"
+import MedicalSpecialist from "../MedicalSpecialist/MedicalSpecialist"
 
 const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
   <div className="input-container select-width">
@@ -38,7 +40,7 @@ const Category = ({ src, alt, label }) => (
   </div>
 );
 
-const MedifyNavWithBodyWrapper = ({
+const MedifyBodyContentWrapper = ({
   selectedState,
   setSelectedState,
   selectedCity,
@@ -127,12 +129,13 @@ const MedifyNavWithBodyWrapper = ({
 
   return (
     <div className="medify-body-container">
-      <Navbar />
       {renderHeroSection()}
       {renderSearchDetails()}
       {renderOffers(3, 1250)}
+      <Specialisation />
+      <MedicalSpecialist />
     </div>
   );
 };
 
-export default MedifyNavWithBodyWrapper;
+export default MedifyBodyContentWrapper;
