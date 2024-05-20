@@ -1,21 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavbarMedifyQuotation from "./components/NavbarMedifyQuotation/NavbarMedifyQuotation"
 import Navbar from "./components/Navbar/Navbar"
+import MedifyNavWithBodyWrapper from "./components/MedifyNavWithBodyWrapper/MedifyNavWithBodyWrapper";
 import "./App.css";
 
 
 const App = () => {
 
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+  const [states, setStates] = useState([]);
+  const [cities, setCities] = useState([]);
+
   return (
     <div className=".App">
       <NavbarMedifyQuotation />
-      <Navbar />
       <Routes>
         <Route
           path="/"
-          component={
-            <p>Sample component</p>
+          element={
+            <MedifyNavWithBodyWrapper
+              selectedState={selectedState}
+              setSelectedState={setSelectedState}
+              states={states}
+              selectedCity={selectedCity}
+              setSelectedCity={setSelectedCity}
+              cities={cities}
+            />
           }
         />
       </Routes>
