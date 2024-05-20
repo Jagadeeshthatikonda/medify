@@ -20,11 +20,11 @@ import MedicalSpecialist from "../MedicalSpecialist/MedicalSpecialist"
 import PatientCaringSection from "../PatientCaringSection/PatientCaringSection"
 import BlogAndNews from "../../components/BlogAndNews/BlogAndNews"
 import FamilySection from "../../components/FamilySection/FamilySection"
-import FaqSection from "../../components/FaqSection/FaqSection"
+import FaqSection from "../../components/FaqSection/FaqSection";
 
 const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
   <div className="input-container select-width">
-    <img src={SearchIcon} alt="search icon" />
+    <img src={SearchIcon} alt="Search icon" />
     <select value={selectedValue} onChange={onChange}>
       <option value="">{placeholder}</option>
       {options.map((option) => (
@@ -52,6 +52,7 @@ const MedifyBodyContentWrapper = ({
   cities,
 }) => {
   const navigate = useNavigate();
+  console.log(states, cities)
 
   const renderCategory = () => <div className="category">
     <Category src={DoctorLogo} alt="Doctor" label="Doctors" />
@@ -68,13 +69,13 @@ const MedifyBodyContentWrapper = ({
           options={states}
           selectedValue={selectedState}
           onChange={(e) => setSelectedState(e.target.value)}
-          placeholder="Select a state"
+          placeholder="State"
         />
         <Dropdown
           options={cities}
           selectedValue={selectedCity}
           onChange={(e) => setSelectedCity(e.target.value)}
-          placeholder="Select a city"
+          placeholder="City"
         />
         <button
           className="search-btn"
@@ -140,6 +141,8 @@ const MedifyBodyContentWrapper = ({
       <PatientCaringSection />
       <BlogAndNews />
       <FamilySection />
+      <FaqSection />
+
     </div>
   );
 };

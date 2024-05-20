@@ -1,0 +1,100 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 4px solid rgba(240, 240, 245, 1);
+}
+
+.slot-day {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(65, 65, 70, 1);
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.total-slots {
+  line-height: 16.8px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  font-family: Lato;
+  color: rgba(1, 164, 0, 1);
+}
+
+.slide.active {
+  border-bottom: 4px solid rgba(42, 167, 255, 1);
+}
+
+.appointments-container {
+  position: relative;
+  width: 100%;
+}
+.appointments-content {
+  margin: auto;
+  width: 80%;
+}
+
+.swiper-button-prev {
+  top: 20px;
+  left: 0px;
+  position: absolute;
+}
+
+.swiper-button-next {
+  top: 20px;
+  right: 0px;
+  position: absolute;
+}
+
+.afternoon {
+  border-top: 1px solid rgba(240, 240, 245, 1);
+  border-bottom: 1px solid rgba(240, 240, 245, 1);
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+.time-of-day {
+  color: rgba(65, 65, 70, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  width: 84px;
+}
+
+.slot {
+  width: 84px;
+  height: 31.59px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Lato;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid rgba(42, 167, 255, 1);
+  line-height: 19.6px;
+  color: rgba(42, 167, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

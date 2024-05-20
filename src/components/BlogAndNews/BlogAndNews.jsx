@@ -7,11 +7,13 @@ const BlogCard = ({ image, date, title, editorImage, editorName }) => (
   <div className="card">
     <img src={image} alt={title} />
     <div className="content">
-      <h5>Medical <span>|</span> {date}</h5>
-      <h3>{title}</h3>
+      <h5 className="content-heading-small">
+        Medical <span className="content-heading-small-span">|</span> {date}
+      </h5>
+      <h3 className="content-heading-large">{title}</h3>
       <div className="editor">
-        <img src={editorImage} alt={editorName} />
-        <h4>{editorName}</h4>
+        <img className="content-editor-img" src={editorImage} alt={editorName} />
+        <h4 className="content-editor-name">{editorName}</h4>
       </div>
     </div>
   </div>
@@ -44,8 +46,8 @@ const BlogAndNews = () => {
 
   return (
     <div className="blog-and-news">
-      <h4>Blog & News</h4>
-      <h1>Read Our Latest News</h1>
+      <h4 className="blog-and-news-heading-small">Blog & News</h4>
+      <h1 className="blog-and-news-heading-large">Read Our Latest News</h1>
       <div className="blogs">
         {blogData.map((blog, index) => (
           <BlogCard key={index} {...blog} />

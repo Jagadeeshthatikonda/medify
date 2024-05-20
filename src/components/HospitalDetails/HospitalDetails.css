@@ -1,0 +1,142 @@
+.hospital-details-container {
+  border-radius: 15px;
+  background: #ffffff;
+  margin: 20px 0px;
+}
+
+.hospital-details-content {
+  width: 786px;
+  height: 269px;
+  display: flex;
+  gap: 25px;
+  padding: 24px;
+}
+.hospital-image {
+  width: 124px;
+  height: 124px;
+}
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 50px;
+}
+
+.hospital-name {
+  color: #14bef0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 15px 0px;
+}
+
+.more-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #414146;
+}
+
+.middle-content .free-span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #02a401;
+  line-height: 19.6px;
+}
+
+.middle-content .price-span {
+  font-size: 14px;
+  color: #787887;
+  font-weight: 400;
+  line-height: 19.6px;
+  margin: 0px 10px;
+}
+
+.middle-content .fee-span {
+  color: #414146;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+}
+
+.like-image-container {
+  margin-top: 10px;
+}
+
+.like-image-container > img {
+  width: 44.08px;
+  height: 22.5px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.right-content > p {
+  color: #01a400;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  text-align: center;
+  margin: 5px;
+}
+
+.right-content > button {
+  background-color: #2aa7ff;
+  width: 212px;
+  height: 40px;
+  padding: 9.62px 28.55px 9.38px 29.45px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.lower {
+  width: 786px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 24px 24px;
+}
+
+.right-content-my-bookings {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.right-content-my-bookings .time {
+  width: 84px;
+  height: 31.59px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #2aa7ff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: center;
+  color: #2aa7ff;
+}
+
+.right-content-my-bookings .date {
+  width: 128px;
+  height: 32px;
+  padding: 7px;
+  border: 1px solid #00a500;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  line-height: 19.6px;
+  text-align: center;
+  color: #007100;
+}

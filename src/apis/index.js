@@ -5,7 +5,7 @@ export const BACKEND_END_POINT = "https://meddata-backend.onrender.com";
 
 export const getListOfStates = async () => {
   try {
-    const response = await axios.get(`${BACKEND_END_POINT}states`);
+    const response = await axios.get(`${BACKEND_END_POINT}/states`);
     return response.data;
   } catch (error) {
     if (error.request) {
@@ -20,7 +20,7 @@ export const getListOfStates = async () => {
 export const getCitiesFromState = async (selectedState) => {
   try {
     const response = await axios.get(
-      `https://meddata-backend.onrender.com/cities/${selectedState}`
+      `${BACKEND_END_POINT}/cities/${selectedState}`
     );
     return response.data;
   } catch (error) {
@@ -36,7 +36,7 @@ export const getCitiesFromState = async (selectedState) => {
 export const getMedicalCentersFromStateAndCity = async (selectedState, selectedCity) => {
   try {
     const response = await axios.get(
-      `https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`
+      `${BACKEND_END_POINT}/data?state=${selectedState}&city=${selectedCity}`
     );
     return response.data;
   } catch (error) {
