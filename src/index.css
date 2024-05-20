@@ -53,7 +53,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 button {
   border: none;
   outline: none;
+}
+body::-webkit-scrollbar {
+  display: block;
 }
