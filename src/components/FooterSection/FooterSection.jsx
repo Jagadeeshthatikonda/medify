@@ -21,6 +21,11 @@ const FooterSection = () => {
     "Our Gallery",
     "Appointment",
     "Privacy Policy",
+    "Orthology",
+    "Neurology",
+    "Dental Care",
+    "Opthalmology",
+    "Cardiology"
   ];
 
   return (
