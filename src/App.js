@@ -6,6 +6,7 @@ import MedifyBodyContentWrapper from "./components/MedifyBodyContentWrapper/Medi
 import "./App.css";
 import FaqSection from "./components/FaqSection/FaqSection";
 import DownloadAppSection from "./components/DownloadAppSection/DownloadAppSection"
+import FooterSection from "./components/FooterSection/FooterSection"
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
       </Routes>
       <FaqSection />
       <DownloadAppSection />
+      <FooterSection />
     </div>
   );
 }
