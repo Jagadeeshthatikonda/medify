@@ -18,6 +18,7 @@ import { useNavigate } from "react-router-dom";
 import Specialisation from "../Specialisation/Specialisation"
 import MedicalSpecialist from "../MedicalSpecialist/MedicalSpecialist"
 import PatientCaringSection from "../PatientCaringSection/PatientCaringSection"
+import BlogAndNews from "../../components/BlogAndNews/BlogAndNews"
 
 const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
   <div className="input-container select-width">
@@ -135,6 +136,7 @@ const MedifyBodyContentWrapper = ({
       <Specialisation />
       <MedicalSpecialist />
       <PatientCaringSection />
+      <BlogAndNews />
     </div>
   );
 };
