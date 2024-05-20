@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import MedifyBodyContentWrapper from "./components/MedifyBodyContentWrapper/MedifyBodyContentWrapper";
 import "./App.css";
 import FaqSection from "./components/FaqSection/FaqSection";
-
+import DownloadAppSection from "./components/DownloadAppSection/DownloadAppSection"
 
 const App = () => {
 
@@ -35,7 +35,7 @@ const App = () => {
         />
       </Routes>
       <FaqSection />
-
+      <DownloadAppSection />
     </div>
   );
 }
