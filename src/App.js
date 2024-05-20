@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavbarMedifyQuotation from "./components/NavbarMedifyQuotation/NavbarMedifyQuotation"
 import Navbar from "./components/Navbar/Navbar"
-import MedifyNavWithBodyWrapper from "./components/MedifyNavWithBodyWrapper/MedifyNavWithBodyWrapper";
+import MedifyBodyContentWrapper from "./components/MedifyBodyContentWrapper/MedifyBodyContentWrapper";
 import "./App.css";
 
 
@@ -16,11 +16,13 @@ const App = () => {
   return (
     <div className=".App">
       <NavbarMedifyQuotation />
+      <Navbar />
+
       <Routes>
         <Route
           path="/"
           element={
-            <MedifyNavWithBodyWrapper
+            <MedifyBodyContentWrapper
               selectedState={selectedState}
               setSelectedState={setSelectedState}
               states={states}
