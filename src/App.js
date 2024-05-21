@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar/Navbar"
 import MedifyBodyContentWrapper from "./components/MedifyBodyContentWrapper/MedifyBodyContentWrapper";
 import "./App.css";
 import { listOfSlots } from "./utils"
-import FaqSection from "./components/FaqSection/FaqSection";
 import DownloadAppSection from "./components/DownloadAppSection/DownloadAppSection"
 import FooterSection from "./components/FooterSection/FooterSection"
 import { getListOfStates, getCitiesFromState, getMedicalCentersFromStateAndCity } from "./apis"
@@ -59,7 +58,7 @@ const App = () => {
   }, [selectedState])
 
   return (
-    <div className=".App">
+    <div className="App">
       <NavbarMedifyQuotation />
       <Navbar />
 

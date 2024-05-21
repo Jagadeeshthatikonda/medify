@@ -38,3 +38,12 @@
   border: none;
   font-family: Poppins;
 }
+
+.my-bookings {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}

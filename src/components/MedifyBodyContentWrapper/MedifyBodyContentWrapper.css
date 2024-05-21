@@ -15,7 +15,7 @@
 }
 
 .hero-section-info {
-  width: 39%;
+  width: 663px;
 }
 
 .find-center-btn {
@@ -70,7 +70,7 @@
 
 .search-hospital-details {
   position: absolute;
-  border: 1px solid #f0f0f0;
+  border: 1px solid#E8E8E8;
   width: 1170px;
   background: #ffffff;
   box-shadow: 6px 6px 35px 0px #1028511c;
@@ -190,4 +190,26 @@
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0.02em;
+}
+
+select::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+select::-webkit-scrollbar-track {
+  background: #d3d3d3;
+}
+
+/* Handle */
+select::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 12px;
+}
+select option {
+  cursor: pointer;
+}
+/* Handle on hover */
+select::-webkit-scrollbar-thumb:hover {
+  background: #d3d3d3;
 }

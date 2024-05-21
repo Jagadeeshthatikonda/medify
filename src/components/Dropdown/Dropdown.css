@@ -1,0 +1,10 @@
+.input-container {
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgba(250, 251, 254, 1);
+  border: 1px solid rgba(240, 240, 240, 1);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 285px;
+}

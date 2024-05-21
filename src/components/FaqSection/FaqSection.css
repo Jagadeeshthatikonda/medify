@@ -57,3 +57,68 @@
   right: -35px;
   top: 110px;
 }
+
+.questions-container > div {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.questions-container > div > div {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #1b3c74;
+  padding-bottom: 16px !important;
+  width: 464px;
+}
+
+.questions-container > div:before {
+  height: 0px;
+}
+.accordiansDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.accordiansDetails > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gray-secondary);
+  width: 38%;
+}
+
+.accordiansContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.accordianContainer {
+  box-shadow: none !important;
+}
+
+.accordianLastContainer {
+  box-shadow: none !important;
+}
+
+.accordianDetails {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29.25px;
+  text-align: left;
+  padding-left: 0px !important;
+
+  color: var(--color-gray-secondary) !important;
+  background-color: transparent !important;
+}
+
+.accordianContainer:first-child .accordianSummary {
+  padding-top: 0px !important;
+}
+
+.accordianContainer:first-child .accordianSummary:first-child {
+  margin-top: 0px !important;
+}

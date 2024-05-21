@@ -3,7 +3,6 @@ import "./MedifyBodyContentWrapper.css";
 import Hero from "../../assets/Hero.png";
 import ThirtyOff from "../../assets/ThirtyOff.png";
 import HundredOff from "../../assets/HundredOff.png";
-import SearchIcon from "../../assets/SearchIcon.png";
 import SearchWhiteIcon from "../../assets/SearchwhiteIcon.png";
 import DoctorLogo from "../../assets/DoctorLogo.png";
 import Ambulance from "../../assets/Ambulance.png";
@@ -21,20 +20,8 @@ import PatientCaringSection from "../PatientCaringSection/PatientCaringSection"
 import BlogAndNews from "../../components/BlogAndNews/BlogAndNews"
 import FamilySection from "../../components/FamilySection/FamilySection"
 import FaqSection from "../../components/FaqSection/FaqSection";
+import Dropdown from "../../components/Dropdown/Dropdown"
 
-const Dropdown = ({ options, selectedValue, onChange, placeholder }) => (
-  <div className="input-container select-width">
-    <img src={SearchIcon} alt="Search icon" />
-    <select value={selectedValue} onChange={onChange}>
-      <option value="">{placeholder}</option>
-      {options.map((option) => (
-        <option key={option} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
-  </div>
-);
 
 const Category = ({ src, alt, label }) => (
   <div>

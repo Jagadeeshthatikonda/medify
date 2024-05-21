@@ -1,12 +1,12 @@
 import React from "react";
 import "./FindDoctor.css";
 
-import searchIcon from "../../assets/SearchIcon.png";
 import searchWhiteIcon from "../../assets/SearchwhiteIcon.png";
 import verifiedtick from "../../assets/verifiedtick.png";
 import oralhealth from "../../assets/oralhealth.png";
 import HospitalDetails from "../HospitalDetails/HospitalDetails"
 import FaqSection from "../FaqSection/FaqSection";
+import Dropdown from "../Dropdown/Dropdown"
 
 const FindDoctor = ({
   medicalCenters,
@@ -22,12 +22,7 @@ const FindDoctor = ({
   setAvailableSlots,
 }) => {
 
-  const renderSelectOptions = (options) =>
-    options.map((option) => (
-      <option key={option} value={option}>
-        {option}
-      </option>
-    ));
+
 
   const renderMedicalCenters = () =>
     medicalCenters.map((center, index) => (
@@ -44,23 +39,21 @@ const FindDoctor = ({
     ));
 
   const renderStateSelect = () => (
-    <div className="input-container">
-      <img src={searchIcon} alt="Search Icon" />
-      <select value={selectedState} onChange={(e) => setSelectedState(e.target.value)}>
-        <option value="">Select a state</option>
-        {renderSelectOptions(states)}
-      </select>
-    </div>
+    <Dropdown
+      options={states}
+      selectedValue={selectedState}
+      onChange={(e) => setSelectedState(e.target.value)}
+      placeholder="State"
+    />
   );
 
   const renderCitySelect = () => (
-    <div className="input-container">
-      <img src={searchIcon} alt="Search Icon" />
-      <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-        <option value="">Select a city</option>
-        {renderSelectOptions(cities)}
-      </select>
-    </div>
+    <Dropdown
+      options={states}
+      selectedValue={selectedState}
+      onChange={(e) => setSelectedState(e.target.value)}
+      placeholder="City"
+    />
   );
 
   const renderSearchButton = () => (

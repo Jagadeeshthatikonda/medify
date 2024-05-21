@@ -85,6 +85,7 @@ const Appointments = ({
             nextEl: ".swiper-button-next",
           }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
+
         >
           {availableSlots.map((slot, index) => (
             <SwiperSlide key={index} onClick={() => handleDaySelect(index)}>
