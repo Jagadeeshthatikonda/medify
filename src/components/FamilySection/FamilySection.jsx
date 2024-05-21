@@ -15,7 +15,7 @@ const FamilySection = () =>
         treat all enquiries sensitively and in the strictest confidence.
       </p>
     </div>
-    <img src={MedifyOverviewImage} alt="medify-overview" className="our-family-section-image" />
+    <img srcSet="" src={MedifyOverviewImage} alt="medify-overview" className="our-family-section-image" />
   </div>
 
 export default FamilySection;

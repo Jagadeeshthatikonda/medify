@@ -15,7 +15,7 @@ const Bookings = ({ appointments }) => {
   const renderSearchInput = () => (
     <div className="search-input-container">
       <div className="input-container booking-input">
-        <img src={SearchIcon} alt="Search" />
+        <img srcSet="" src={SearchIcon} alt="Search" />
         <input
           type="text"
           placeholder="Search by hospital"
@@ -24,7 +24,7 @@ const Bookings = ({ appointments }) => {
         />
       </div>
       <button className="search-btn">
-        <img src={SearchWhiteIcon} alt="Search" />
+        <img srcSet="" src={SearchWhiteIcon} alt="Search" />
         Search
       </button>
     </div>
@@ -41,7 +41,7 @@ const Bookings = ({ appointments }) => {
           <h1 className="no-bookings">No bookings yet</h1>
         )}
         {appointments.length ? (
-          <img className="oralhealth" src={oralhealth} alt="Oral Health" />
+          <img srcSet="" className="oralhealth" src={oralhealth} alt="Oral Health" />
         ) : null}
       </div>
     </div>

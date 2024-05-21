@@ -25,7 +25,7 @@ import Dropdown from "../../components/Dropdown/Dropdown"
 
 const Category = ({ src, alt, label }) => (
   <div>
-    <img src={src} alt={alt} />
+    <img srcSet="" src={src} alt={alt} />
     <h6>{label}</h6>
   </div>
 );
@@ -70,7 +70,7 @@ const MedifyBodyContentWrapper = ({
             navigate("/findDoctor");
           }}
         >
-          <img src={SearchWhiteIcon} alt="" />
+          <img srcSet="" src={SearchWhiteIcon} alt="" />
           Search
         </button>
       </div>
@@ -96,7 +96,7 @@ const MedifyBodyContentWrapper = ({
           Find Centers
         </button>
       </div>
-      <img src={Hero} alt="Hero" />
+      <img srcSet="" src={Hero} alt="Hero" />
     </div>
   );
 
@@ -111,7 +111,7 @@ const MedifyBodyContentWrapper = ({
       >
         {[HundredOff, ThirtyOff, HundredOff, ThirtyOff, HundredOff].map((src, idx) => (
           <SwiperSlide key={idx}>
-            <img className="offer" src={src} alt="Offer" />
+            <img srcSet="" className="offer" src={src} alt="Offer" />
           </SwiperSlide>
         ))}
       </Swiper>

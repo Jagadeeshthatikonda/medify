@@ -47,7 +47,7 @@ const FaqSection = () => {
             expanded === `panel${index}` ? (
               <RemoveCircleOutlinedIcon sx={{ color: "var(--color-primary)" }} />
             ) : (
-              <img src={Plus} alt="Plus icon" />
+              <img srcSet="" src={Plus} alt="Plus icon" />
             )
           }
           aria-controls={`panel${index}a-content`}

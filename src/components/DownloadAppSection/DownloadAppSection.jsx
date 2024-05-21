@@ -8,8 +8,8 @@ import React from "react";
 
 const DownloadAppSection = () =>
   <div className="download-section-container">
-    <img className="mobile" src={DownloadSectionCropped} alt="" srcset="" />
-    <img className="downarrow" src={Downarrow} alt="" srcset="" />
+    <img srcSet="" className="mobile" src={DownloadSectionCropped} alt="" />
+    <img srcSet="" className="downarrow" src={Downarrow} alt="" />
     <div>
       <h2 className="download-heading">
         Download the <span className="medify-text">Medify</span> App
@@ -24,8 +24,8 @@ const DownloadAppSection = () =>
       </div>
 
       <div className="apple-google">
-        <img src={google} alt="" srcset="" />
-        <img src={apple} alt="" srcset="" />
+        <img srcSet="" src={google} alt="" />
+        <img srcSet="" src={apple} alt="" />
       </div>
     </div>
   </div>

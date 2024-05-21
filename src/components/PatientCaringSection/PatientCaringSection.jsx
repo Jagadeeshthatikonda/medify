@@ -5,7 +5,7 @@ import caring from "../../assets/caring.png";
 
 const FeatureItem = ({ icon, text }) => (
   <div className="feature-item">
-    <img src={icon} alt="Blue tick" />
+    <img srcSet="" src={icon} alt="Blue tick" />
     <p className="feature-item-text">{text}</p>
   </div>
 );
@@ -13,7 +13,7 @@ const FeatureItem = ({ icon, text }) => (
 const PatientCaringSection = () => {
   return (
     <div className="patient-caring">
-      <img src={caring} alt="Patient Caring" />
+      <img srcSet="" src={caring} alt="Patient Caring" />
       <div className="patient-caring-info">
         <h2 className="helping-text">HELPING PATIENTS FROM AROUND THE GLOBE!!</h2>
         <h1>

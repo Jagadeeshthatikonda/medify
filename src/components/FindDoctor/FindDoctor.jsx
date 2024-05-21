@@ -58,7 +58,7 @@ const FindDoctor = ({
 
   const renderSearchButton = () => (
     <button className="search-btn">
-      <img src={searchWhiteIcon} alt="Search Icon" />
+      <img srcSet="" src={searchWhiteIcon} alt="Search Icon" />
       Search
     </button>
   );
@@ -69,7 +69,7 @@ const FindDoctor = ({
         {medicalCenters.length} medical centers available in {selectedState}
       </h1>
       <h6 className="verified-tick-heading">
-        <img src={verifiedtick} alt="Verified Tick" />
+        <img srcSet="" src={verifiedtick} alt="Verified Tick" />
         Book appointments with minimum wait-time & verified doctor details
       </h6>
     </div>
@@ -85,7 +85,7 @@ const FindDoctor = ({
           <div class="loader"></div>
         )}
       </div>
-      <img src={oralhealth} alt="Oral Health" className="oral-health-image" />
+      <img srcSet="" src={oralhealth} alt="Oral Health" className="oral-health-image" />
     </div>
   );
 

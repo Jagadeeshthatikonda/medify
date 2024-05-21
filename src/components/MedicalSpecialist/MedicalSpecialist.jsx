@@ -33,7 +33,7 @@ const MedicalSpecialist = () => {
     <SwiperSlide key={key} className='swiper-slide'>
       <div className="doctor-profile-details-container">
         <div className="doctor-profile-image">
-          <img className="doctor-image" src={img} alt={name} />
+          <img srcSet="" className="doctor-image" src={img} alt={name} />
         </div>
         <div className="doctor-info">
           <h1>{name}</h1>

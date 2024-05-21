@@ -25,7 +25,7 @@ const Specialisation = () => (
         <div className="specialisation-item">
             {specialisations.map((specialisation, index) => (
                 <div className="box" key={index}>
-                    <img src={specialisation.img} alt={specialisation.label} />
+                    <img srcSet="" src={specialisation.img} alt={specialisation.label} />
                     <h3>{specialisation.label}</h3>
                 </div>
             ))}

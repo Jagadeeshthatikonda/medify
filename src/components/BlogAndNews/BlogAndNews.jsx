@@ -5,14 +5,14 @@ import editor from '../../assets/editor.jpg';
 
 const BlogCard = ({ image, date, title, editorImage, editorName }) => (
   <div className="card">
-    <img src={image} alt={title} />
+    <img srcSet="" src={image} alt={title} />
     <div className="content">
       <h5 className="content-heading-small">
         Medical <span className="content-heading-small-span">|</span> {date}
       </h5>
       <h3 className="content-heading-large">{title}</h3>
       <div className="editor">
-        <img className="content-editor-img" src={editorImage} alt={editorName} />
+        <img srcSet="" className="content-editor-img" src={editorImage} alt={editorName} />
         <h4 className="content-editor-name">{editorName}</h4>
       </div>
     </div>

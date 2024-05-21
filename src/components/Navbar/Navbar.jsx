@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/logo.png";
 import "./styles.css";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="header-container">
-      <img
+      <img srcSet=""
         src={Logo}
         onClick={() => navigate("/")}
         height={27}

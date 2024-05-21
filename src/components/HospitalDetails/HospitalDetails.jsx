@@ -51,7 +51,7 @@ const HospitalDetails = ({
         <span className="fee-span">Consultation fee at clinic</span>
       </div>
       <div className="like-image-container">
-        <img src={LikeButton} alt="Like" />
+        <img srcSet="" src={LikeButton} alt="Like" />
       </div>
     </div>
   );
@@ -59,7 +59,7 @@ const HospitalDetails = ({
   return (
     <div className="hospital-details-container">
       <div className="hospital-details-content">
-        <img src={HospitalCenter} alt="Hospital" className="hospital-image" />
+        <img srcSet="" src={HospitalCenter} alt="Hospital" className="hospital-image" />
         {renderCardMiddleContent()}
         {renderCardRightContent()}
       </div>
